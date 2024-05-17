@@ -1,7 +1,7 @@
-import { toggleAnswer } from "./assests/src/toggleAnswer.js";
-import { updateTimer } from "./assests/src/updateTimer.js";
-import { updateForIOS } from "./assests/src/updateForIOS.js";
-import { observer } from "./assests/src/observer.js";
+import { toggleAnswer } from "./src/utils/toggleAnswer.js";
+import { updateTimer } from "./src/utils/updateTimer.js";
+import { updateForIOS } from "./src/utils/updateForIOS.js";
+import { observer } from "./src/utils/observer.js";
 
 document.addEventListener('DOMContentLoaded', function () {
 
