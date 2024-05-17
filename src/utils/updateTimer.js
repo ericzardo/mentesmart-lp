@@ -1,5 +1,5 @@
 const updateTimer = (duration) => {
-    const [hours, minutes, seconds] = document.querySelectorAll(".countdown-value");
+    const [, minutes, seconds] = document.querySelectorAll(".countdown-value");
   
     let timer = duration;
   

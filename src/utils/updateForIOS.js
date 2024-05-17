@@ -25,7 +25,6 @@ const updateForIOS = () => {
         return
     }
     if (!isIOS()) {
-        console.log("Not IOS")
         return
     }
     
