@@ -71,6 +71,12 @@
     height: auto;
 
     max-width: 700px;
+
+    transition: transform .3s ease-in;
+}
+
+.banner .capa-ebook:hover {
+    transform: scale(1.1) rotateZ(10deg);
 }
 
 .banner .banner-content {
@@ -232,6 +238,14 @@
     max-width: 30px;
 }
 
+.audience-section img {
+    transition: transform .3s ease-in-out;
+}
+
+.audience-section img:hover {
+    transform: scale(1.2);
+}
+
 /* END AUDIENCE SECTION */
 
 
@@ -250,6 +264,11 @@
     background-size: cover;
 
     padding-top: 20px;
+}
+
+.video-section .video-title {
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .video-section .skew-cc {
@@ -409,7 +428,6 @@
 
 .testimonial-content .testimonial-box {
     position: relative;
-    font-family: sans-serif;
     font-size: 18px;
     line-height: 24px;
     max-width: 400px;
@@ -490,6 +508,8 @@
     line-height: 1.2;
     letter-spacing: 1px;
     font-size: 16px;
+    font-family: var(--primary-font);
+
 
     color: var(--white-color);
 }
