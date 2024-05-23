@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mente Smart</title>
+  <title>Oops</title>
   <meta name="author" content="Mente Smart">
 
   <meta name="robots" content="index, follow">
 
-  <meta name="description" content="Opss... Parece que está página não se encontra no ar.">
+
+  <meta name="description" content="Página de agradecimentos pela compra do ebook.">
   <meta name="keywords" content="mente smart, ebook, desenvolvimento pessoal, conhecimento agradecimentos">
   
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,16 +21,39 @@
   <link rel="stylesheet" href="../../assets/css/404/style.css">
 
   <link href="../../assets/img/logo/favicon/colored-white.ico" rel="icon"/>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6B9BHB7PV8"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6B9BHB7PV8');
+  </script>
 </head>
 <body>
-  <section class="box">
-    <div class="container">
-      <h1 class="title text-center yellow-text">Oops!</h1>
-      <h2 class="subtitle text-center">404 - PAGE NOT FOUND</h2>
-      <p class="paragraph text-center">A página que você está procurando foi alterada o nome, removida ou temporariamente indisponível</p>
-      <a class="center-btn cta-button" href="../../../index.html">Mente Smart</a>
-    </div>
-    <span class="skew-cc"></span>
-  </section>
+
+  <video autoplay loop muted plays-inline class="video-background">
+    <source src="../../assets/img/backgrounds/animated.webm" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+
+  <div class="error-content">
+    <span>
+      <h1 class="error-title text-center yellow-text">Oops!</h1>
+      <h2 class="error-subtitle text-center">404 - PAGE NOT FOUND</h2>
+    </span>
+
+    <p class="paragraph text-center">A página que você está procurando foi removida, alterada o nome, ou está temporariamente indisponível</p>
+
+    <a class="logo-link" href="../../../index.html"><img src="../../assets/img/logo/vertical/colored-white-v2.svg" class="logo" alt=""></a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var video = document.querySelector(".video-background");
+        video.playbackRate = 0.5;
+    });
+  </script>
 </body>
 </html>
