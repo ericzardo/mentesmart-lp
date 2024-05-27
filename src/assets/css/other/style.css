@@ -43,6 +43,40 @@ body {
   box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
+.error-content {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 3;
+
+  background: #161616d5;
+
+  padding: 80px 60px;
+  width: 50%;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.error-title {
+  font-size: 9em;
+}
+
+.error-subtitle {
+  margin: 10px 0;
+}
+
+.paragraph {
+  margin: 5px 0 0;
+}
+
 .logo-link {
   display: flex;
   align-items: center;

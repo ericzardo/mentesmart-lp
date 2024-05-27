@@ -1,23 +1,27 @@
 @media (max-width: 1290px) {
-  .thanks-content {
+  .error-content, .thanks-content  {
     width: 70%;
   }
 }
 
 @media (max-width: 930px) {
-  .thanks-content {
+  .error-content, .thanks-content {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .thanks-content {
-      width: 80%;
-      padding: 40px 20px;
+  .error-content, .thanks-content {
+    width: 80%;
+    padding: 40px 20px;
+  }
+
+  .error-title {
+    font-size: 7em;
   }
 
   .title-one {
-      font-size: 2.5em;
+    font-size: 2.5em;
   }
 
   .send-email-icon {
@@ -25,18 +29,21 @@
   }
 
   .email-message .paragraph {
-      max-width: 100%;
-      margin: 10px 0 0 0;
-      text-align: left;
+    max-width: 100%;
+    margin: 10px 0 0 0;
+    text-align: left;
   }
 }
 
 @media (max-width: 480px) {
-  .thanks-content {
+  .error-content, .thanks-content {
       width: 90%;
       padding: 20px 10px;
   }
 
+  .error-title {
+      font-size: 5.5em;
+  }
   .title-one {
       font-size: 2em;
   }
@@ -50,6 +57,6 @@
   }
 
   .email-message .paragraph {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 }

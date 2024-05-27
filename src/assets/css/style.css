@@ -1,4 +1,27 @@
+/* GLOBAL COLORS */
 
+:root {
+    --yellow-primary: #FFD700;
+    --blue-primary: #011E6C;
+    --blue-secondary: #02559a;
+
+
+    --strong-black: #0f0f0f;
+    --primary-black: #161616;
+    --secondary-black: #1E1E1E;
+    --light-black: #272727;
+
+    --white-color: #e0e0e0;
+    --grey-color: #898989;
+
+    --primary-font: "Montserrat", sans-serif;
+}
+
+/* END GLOBAL COLORS */
+
+
+
+/* GLOBAL STYLESHEET */
 
 * {
     box-sizing: border-box;
@@ -210,4 +233,47 @@ section {
     border-color: var(--yellow-primary);
 
     width: 20%;
+}
+
+/* ANIMATIONS */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.hidden-right {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+.hidden-top {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.hidden-bottom {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(10%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
 }
