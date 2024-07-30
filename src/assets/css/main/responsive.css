@@ -17,7 +17,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     .container {
         max-width: 900px;
     }
@@ -26,10 +26,19 @@
         gap: 20px;
     }
 
-    .audience-list {
+    .secrets-section .secrets-list {
         flex-wrap: wrap;
-        gap: 50px;
+        justify-content: center;
+
+        gap: 70px;
     }
+
+    .secrets-list .secret-item:last-child {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
 
     .topic .mini-title {
         margin-bottom: 10px;
@@ -51,6 +60,13 @@
     .question {
         font-size: 20px;
         padding-bottom: 0;
+    }
+}
+
+@media (max-width: 920px) {
+    .container {
+        width: 90%;
+        max-width: 850px;
     }
 }
 

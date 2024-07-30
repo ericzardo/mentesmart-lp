@@ -134,7 +134,7 @@ section {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 
@@ -151,6 +151,7 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
+    gap: 15px;
 
     width: 100%;
 }
@@ -196,7 +197,12 @@ section {
     justify-content: center;
 }
 
-.cta-button {
+.cta-button, .submit-button {
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
     margin: 10px 0;
     padding: 20px;
 
@@ -219,7 +225,7 @@ section {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.cta-button:hover {
+.cta-button:hover, .submit-button:hover {
     transform: scale(1.2);
     
     background-color: var(--yellow-primary);

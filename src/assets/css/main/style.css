@@ -53,7 +53,7 @@
 /* BANNER SECTION CSS */
 
 .banner {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.671), rgba(133, 113, 2, 0.185)), url("../../img/backgrounds/1.webp");;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.671), rgba(133, 113, 2, 0.185)), url("http://127.0.0.1:5500/src/assets/img/backgrounds/1.webp");;
 
     background-attachment: fixed;
     background-position: center;
@@ -165,7 +165,7 @@
 /* JOURNEY SECTION CSS */
 
 .journey-section {
-    background-image: linear-gradient(rgba(0, 62, 112, 0.5), rgba(0,0,0,0.8)), url("../../img/backgrounds/3.webp");
+    background-image: linear-gradient(rgba(0, 62, 112, 0.5), rgba(0,0,0,0.8)), url("http://127.0.0.1:5500/src/assets/img/backgrounds/3.webp");
 
     background-attachment: fixed;
     background-position: center;
@@ -220,7 +220,7 @@
 .audience-section {
     /* linear-gradient(rgba(1, 41, 73, 0.801), rgba(0,0,0,0.8)) */
     /* linear-gradient(rgb(2, 85, 154, 0.5), rgba(0,0,0,0.8)) */
-    background-image: linear-gradient(110deg, rgba(0, 42, 77, 0.74), rgba(26, 26, 26, 0.603)), url("../../img/backgrounds/2.webp");
+    background-image: linear-gradient(110deg, rgba(0, 42, 77, 0.74), rgba(26, 26, 26, 0.603)), url("http://127.0.0.1:5500/src/assets/img/backgrounds/2.webp");
 
     background-attachment: fixed;
     background-position: center;
@@ -284,7 +284,7 @@
 .video-section {
     /* linear-gradient(rgba(1, 41, 73, 0.801), rgba(0,0,0,0.8)) */
     /* linear-gradient(rgb(2, 85, 154, 0.5), rgba(0,0,0,0.8)) */
-    background-image: linear-gradient(110deg, rgba(0, 42, 77, 0.74), rgba(26, 26, 26, 0.603)), url("../../img/backgrounds/2.webp");
+    background-image: linear-gradient(110deg, rgba(0, 42, 77, 0.74), rgba(26, 26, 26, 0.603)), url("http://127.0.0.1:5500/src/assets/img/backgrounds/2.webp");
 
     background-attachment: fixed;
     background-position: center;
@@ -516,7 +516,7 @@
 /* OFFER SECTION CSS */
 
 .offer-section {
-    background-image: linear-gradient(rgba(0, 62, 112, 0.5), rgba(0,0,0,0.8)), url("../../img/backgrounds/2.webp");
+    background-image: linear-gradient(rgba(0, 62, 112, 0.5), rgba(0,0,0,0.8)), url("http://127.0.0.1:5500/src/assets/img/backgrounds/2.webp");
 
     background-attachment: fixed;
     background-position: center;
