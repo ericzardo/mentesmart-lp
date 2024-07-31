@@ -8,6 +8,8 @@
 
   <meta name="robots" content="index, follow">
 
+  <meta name="referrer" content="origin">
+
 
   <meta name="description" content="Página de contato com a Mente Smart">
   <meta name="keywords" content="mente smart, ebook, desenvolvimento pessoal, conhecimento, sabedoria, contato, mensagem">
@@ -22,6 +24,52 @@
 
   <link href="https://mentesmart.com.br/src/assets/img/logo/favicon/colored-white.ico" rel="icon"/>
 
+  <style>
+    .error-modal {
+      background: red;
+      color: #f0f8ff;
+
+      display: none;
+      position: absolute;
+      top: 5%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 1000;
+
+      padding: 15px;
+      padding-right: 30px;
+      width: 40%;
+
+      border-radius: 8px 8px 0 0;
+      box-shadow: 1px 1px 10px 0px #000000bf;
+    }
+
+    .error-text {
+      line-break: loose;
+    }
+
+    .error-timer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #adadad;
+      transition: width 5s linear, opacity .5s ease-out;
+    }
+
+    .fade-out {
+      opacity: 0;
+      transition: opacity .5s ease-out;
+    }
+
+    @media (max-width: 500px) {
+      .error-box {
+        width: 80%;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <video autoplay loop muted plays-inline class="video-background">
@@ -31,13 +79,18 @@
 
   <div class="contact-us">
 
+    <span class="error-modal">
+      <p class="error-text">Erro ao enviar o formulário de contato.</p>
+      <span class="error-timer"></span>
+    </span>
+
     <div class="contact-us-content">
       <div class="image-container">
         <img src="https://mentesmart.com.br/src/assets/img/images/call-us.jpg" alt="Homem de negócios em ligação">
       </div>
       <div class="form-container">
         <h1 class="title-two yellow-text">Fale com a Mente Smart</h1>
-          <form class="forms">
+          <form action="https://formspree.io/f/mnnadpnj" method="POST" class="forms">
             <span class="form-input-label">
               <label for="name">Escreva seu nome</label>
               <input autocomplete="off" name="name" class="form-input" type="text" placeholder="Ex: Luiz Miguel">
@@ -91,6 +144,8 @@
       video.playbackRate = 0.5;
 
       const inputs = [...document.querySelectorAll(".form-input"), document.querySelector(".textarea-input")]
+      const form = document.querySelector(".forms");
+      const errorModal = document.querySelector(".error-modal");
 
       inputs.forEach(input => {
         input.addEventListener("click", () => {
@@ -99,6 +154,38 @@
           input.classList.add("input-actived");
         })
       })
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+        await fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (!response.ok) return;
+          
+          window.location.href = "https://mentesmart.com.br/contato-enviado";
+          
+        })
+        .catch(error => {
+          errorModal.style.display = "block";
+          const timer = document.querySelector(".error-timer");
+
+          setTimeout(() => {
+            timer.style.width = "0";
+          }, 10);
+
+          setTimeout(() => {
+            errorModal.style.display = "none";
+          }, 5010);
+        });
+      }
+
+      form.addEventListener("submit", handleSubmit)
     });
   </script>
 </body>
