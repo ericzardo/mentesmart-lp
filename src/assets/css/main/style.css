@@ -694,6 +694,10 @@
     height: min-content;
 }
 
+.footer .copy {
+    text-align: center;
+}
+
 .footer .social-medias-list {
     list-style: none;
     display: flex;
